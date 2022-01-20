@@ -10,12 +10,16 @@ namespace Kerusakan_Part_02
         public const int FLAME_DAMAGE = 2;
 
 
-           /*
-         * Base constructor:
-         * public WeaponDamage(int startingRoll)
-         */
- 
- 
+        /*
+      * Base constructor:
+      * public WeaponDamage(int startingRoll)
+     {
+         this.roll = startingRoll;
+         CalculateDamage();
+     }
+      */
+
+
         public SwordDamage(int startingRoll) : base(startingRoll) { }
 
         protected override void CalculateDamage()

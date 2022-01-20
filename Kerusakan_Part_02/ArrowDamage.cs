@@ -13,6 +13,10 @@ namespace Kerusakan_Part_02
         /*
          * Base constructor:
          * public WeaponDamage(int startingRoll)
+        {
+            this.roll = startingRoll;
+            CalculateDamage();
+        }
          */
         public ArrowDamage(int startingRoll) : base (startingRoll) { }
 
