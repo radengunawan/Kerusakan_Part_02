@@ -40,7 +40,7 @@ namespace Kerusakan_Part_02
                         takeSWitch('3', weaponKey, kpdn, kpnh);
                         break;
                     default:
-                        return;
+                        return ;
 
                 }
                 //switch (weaponKey)

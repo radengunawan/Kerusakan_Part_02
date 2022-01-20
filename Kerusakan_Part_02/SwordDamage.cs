@@ -14,7 +14,7 @@ namespace Kerusakan_Part_02
         protected override void CalculateDamage()
         {
             decimal magicMultiplier = 1M;
-            if (Magic) magicMultiplier = 1.75M;
+            if (this.Magic) magicMultiplier = 1.75M;
 
             this.Damage = BASE_DAMAGE;
             this.Damage = (int)(this.Roll * magicMultiplier) + BASE_DAMAGE;
