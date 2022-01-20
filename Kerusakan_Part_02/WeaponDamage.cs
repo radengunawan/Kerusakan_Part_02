@@ -6,8 +6,14 @@ namespace Kerusakan_Part_02
 {
     abstract class WeaponDamage
     {
-        
-        public int Damage { get; protected set; }
+        /*Constructor*/
+        public WeaponDamage(int startingRoll)
+        {
+            this.roll = startingRoll;
+            CalculateDamage();
+        }
+
+        public virtual int Damage { get; protected set; }
 
         private int roll;
         public int Roll
@@ -44,12 +50,8 @@ namespace Kerusakan_Part_02
         }
 
         protected abstract void CalculateDamage();
+       
 
-        /*Constructor*/
-        public WeaponDamage(int startingRoll)
-        {
-            this.roll = startingRoll;
-            CalculateDamage();
-        }
+        
     } //END abstract class WeaponDamage
 }

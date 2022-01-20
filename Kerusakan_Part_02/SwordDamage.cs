@@ -6,6 +6,9 @@ namespace Kerusakan_Part_02
 {
     class SwordDamage : WeaponDamage
     {
+
+        public SwordDamage(int startingRoll) : base(startingRoll) { }
+
         public const int BASE_DAMAGE = 3;
         public const int FLAME_DAMAGE = 2;
 
@@ -20,7 +23,7 @@ namespace Kerusakan_Part_02
       */
 
 
-        public SwordDamage(int startingRoll) : base(startingRoll) { }
+        
 
         protected override void CalculateDamage()
         {
