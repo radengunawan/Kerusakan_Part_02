@@ -9,6 +9,13 @@ namespace Kerusakan_Part_02
         public const int BASE_DAMAGE = 3;
         public const int FLAME_DAMAGE = 2;
 
+
+           /*
+         * Base constructor:
+         * public WeaponDamage(int startingRoll)
+         */
+ 
+ 
         public SwordDamage(int startingRoll) : base(startingRoll) { }
 
         protected override void CalculateDamage()
